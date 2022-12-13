@@ -38,4 +38,11 @@ public void kiihdyta()
 {
 	nopeus++;
 }
+@Override
+public void naytaTiedot()
+{
+System.out.println("Lelun nimi: " + nimi);
+System.out.println("Lelun paino: " + paino);
+System.out.println("Lelun nopeus: " + nopeus);
+}
 }
