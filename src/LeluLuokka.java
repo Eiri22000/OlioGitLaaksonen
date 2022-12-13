@@ -42,7 +42,7 @@ public void kiihdyta()
 {
 	nopeus++;
 }
-
+@Override
 public void naytaTiedot()
 {
 System.out.println("Lelun nimi: " + nimi);
