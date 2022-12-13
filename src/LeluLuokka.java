@@ -2,8 +2,12 @@
 public class LeluLuokka {
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-
+	Lelu pehmoKissa = new Lelu("Miuku", 0.3);
+	
+	pehmoKissa.naytaTiedot();
+	
+	VieteriAuto kaara = new VieteriAuto();
+	kaara.naytaTiedot();
 	}
 
 }//End main
@@ -24,13 +28,13 @@ public Lelu(String nimi, double paino)
 	this.nimi = nimi;
 	this.paino = paino;
 	}
-public void naytaTiedot()
+private void naytaTiedot()
 	{
 	System.out.println("Lelun nimi: " + nimi);
 	System.out.println("Lelun paino: " + paino);
 	}
 }
-class Vieteriauto extends Lelu
+class VieteriAuto extends Lelu
 	{
 	int nopeus;
 	
@@ -38,7 +42,7 @@ public void kiihdyta()
 {
 	nopeus++;
 }
-@Override
+
 public void naytaTiedot()
 {
 System.out.println("Lelun nimi: " + nimi);
